@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dice Roller — Pixel Arcade</title>
+<link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html"><span class="brand-mark">◼</span> Pixel<span>Arcade</span></a>
+  <nav class="site-nav"><a href="../../index.html">← Kembali</a></nav>
+</header>
+<main class="container game-wrap">
+  <div class="hud">
+    <div><span class="label">Skor</span><strong id="score">0</strong></div>
+    <div><span class="label">Terbaik</span><strong id="best">0</strong></div>
+    <div><span class="label">Ronde</span><strong id="round">1/5</strong></div>
+    <div><span class="label">Lempar</span><strong id="rolls">3</strong></div>
+  </div>
+  <div class="canvas-frame">
+    <canvas id="game" aria-label="Papan permainan Dice Roller"></canvas>
+    <div id="overlay" class="overlay">
+      <h2>Dice Roller</h2>
+      <p>Klik dadu untuk menahan atau melepasnya, lalu tekan Lempar atau Selesai.</p>
+      <button id="startBtn" class="btn">Mulai</button>
+    </div>
+  </div>
+  <p class="hint">5 dadu, maksimal 3 lemparan per ronde. Bonus: 5 sama +50, 4 sama +25, full house +15.</p>
+</main>
+<script type="module" src="game.js"></script>
+</body>
+</html>

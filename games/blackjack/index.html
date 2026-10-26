@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blackjack — Pixel Arcade</title>
+<link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html"><span class="brand-mark">◼</span> Pixel<span>Arcade</span></a>
+  <nav class="site-nav"><a href="../../index.html">← Kembali</a></nav>
+</header>
+<main class="container game-wrap">
+  <div class="hud">
+    <div><span class="label">Chip</span><strong id="score">100</strong></div>
+    <div><span class="label">Ronde</span><strong id="roundNum">0/10</strong></div>
+    <div><span class="label">Terbaik</span><strong id="best">0</strong></div>
+  </div>
+  <div class="canvas-frame">
+    <canvas id="game" aria-label="Papan permainan Blackjack"></canvas>
+    <div id="overlay" class="overlay">
+      <h2>Blackjack</h2>
+      <p>Tekan Kartu untuk ambil kartu, Stop untuk berhenti. Dekati 21 tanpa melewatinya. 10 ronde, taruhan 10 chip.</p>
+      <button id="startBtn" class="btn">Mulai</button>
+    </div>
+  </div>
+  <p class="hint">Blackjack bayar 2.5x · menang 2x · seri uang kembali. As bernilai 1 atau 11.</p>
+</main>
+<script type="module" src="game.js"></script>
+</body>
+</html>

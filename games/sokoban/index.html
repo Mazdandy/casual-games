@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sokoban — Pixel Arcade</title>
+<link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html"><span class="brand-mark">◼</span> Pixel<span>Arcade</span></a>
+  <nav class="site-nav"><a href="../../index.html">← Kembali</a></nav>
+</header>
+<main class="container game-wrap">
+  <div class="hud">
+    <div><span class="label">Skor</span><strong id="score">0</strong></div>
+    <div><span class="label">Terbaik</span><strong id="best">0</strong></div>
+    <div><span class="label">Level</span><strong id="level">1/5</strong></div>
+    <div><span class="label">Langkah</span><strong id="moves">0</strong></div>
+  </div>
+  <div class="canvas-frame">
+    <canvas id="game" aria-label="Papan permainan Sokoban"></canvas>
+    <div id="overlay" class="overlay">
+      <h2>Sokoban</h2>
+      <p>Gerak dengan panah / WASD atau tombol di layar. Tekan Z atau Backspace untuk batal.</p>
+      <button id="startBtn" class="btn">Mulai</button>
+    </div>
+  </div>
+  <p class="hint">Dorong semua kotak ke titik tujuan. Setiap level selesai dapat 100 poin.</p>
+</main>
+<script type="module" src="game.js"></script>
+</body>
+</html>

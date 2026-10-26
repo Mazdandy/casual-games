@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Beat Drop — Pixel Arcade</title>
+<link rel="stylesheet" href="../../assets/css/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="../../index.html"><span class="brand-mark">◼</span> Pixel<span>Arcade</span></a>
+  <nav class="site-nav"><a href="../../index.html">← Kembali</a></nav>
+</header>
+<main class="container game-wrap">
+  <div class="hud">
+    <div><span class="label">Skor</span><strong id="score">0</strong></div>
+    <div><span class="label">Kombo</span><strong id="combo">0</strong></div>
+    <div><span class="label">Terbaik</span><strong id="best">0</strong></div>
+  </div>
+  <div class="canvas-frame">
+    <canvas id="game" aria-label="Papan permainan Beat Drop"></canvas>
+    <div id="overlay" class="overlay">
+      <h2>Beat Drop</h2>
+      <p>Tekan D / F / J / K atau ketuk jalurnya saat nada menyentuh garis hit.</p>
+      <button id="startBtn" class="btn">Mulai</button>
+    </div>
+  </div>
+  <p class="hint">Perfect +30, Good +15. Selesaikan 60 nada dan jaga kombo!</p>
+</main>
+<script type="module" src="game.js"></script>
+</body>
+</html>
